@@ -9,6 +9,10 @@ buildscript {
         ndkVersion = "21.4.7075529"
     }
     repositories {
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'}
+        maven { url 'https://plugins.gradle.org/m2/' }
         google()
         mavenCentral()
     }
@@ -21,6 +25,10 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter'}
+        maven { url 'https://plugins.gradle.org/m2/' }
         mavenCentral()
         mavenLocal()
         jcenter()
@@ -35,5 +43,6 @@ allprojects {
 
         google()
         maven { url 'https://www.jitpack.io' }
+
     }
 }
